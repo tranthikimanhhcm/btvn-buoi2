@@ -4,12 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giới thiệu bản thân</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
+<!-- Header -->
     <header>
-        <h1>Giới thiệu bản thân</h1>
-
+        <h1 style="color: #0066cc;">Trần Thị Kim Anh</h1> <!-- Inline CSS -->
+        <p>
+        Mình tên là Trần Thị Kim Anh, năm nay 37&nbsp;tuổi,
+         cao 150&nbsp;cm, hiện đang công tác tại <strong>Công Ty TNHH Hoàng Gia Lợi</strong>.
+        Bên mình đang kinh doanh trong lĩnh vực
+        <mark>định vị và camera</mark>.
+        </p>
     </header>
-    
+
+    <!-- Navigation -->
+     <!-- em test vẫn được chị ơi chị thử lại xem chữ e lờ dài chị ơi em thấy chị nhấn chữ i hay sao á -->
+      
+    <nav>
+        <ul>
+            <li><a href="#about">Giới thiệu</a></li>
+            <li><a href="#work">Công việc</a></li>
+            <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+
+        <!-- Giới thiệu -->
+        <section id="about">
+            <h2>Giới thiệu bản thân</h2>
+            <p>
+                Tôi là người yêu thích công nghệ và mong muốn
+                ứng dụng các giải pháp kỹ thuật vào công việc thực tế.
+            </p>
+        </section>
+
+        <!-- Công việc -->
+        <section id="work">
+            <h2>Công việc hiện tại</h2>
+
+            <article>
+                <h3>Vị trí công tác</h3>
+                <p>
+                    Hiện tôi đang làm việc tại Công Ty TNHH Hoàng Gia Lợi,
+                    chuyên cung cấp các giải pháp về thiết bị định vị và camera giám sát.
+                </p>
+            </article>
+        </section>
+
+        <!-- Liên hệ -->
+        <section id="contact">
+            <h2>Thông tin liên hệ</h2>
+            <address>
+                Email: <a href="mailto:hoanggialoihcm@gmail.com">hoanggialoihcm@gmail.com</a><br>
+                Điện thoại: <a href="tel:0902395375">0902 395 375</a>
+            </address>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Trần Thị Kim Anh</p>
+    </footer>  
 </body>
 </html>
